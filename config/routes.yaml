@@ -2,6 +2,14 @@ index:
     path: /
     controller: App\Controller\DefaultController::index
 
-lucky_number:
-    path: /lucky/number
-    controller: App\Controller\LuckyController::number
+cv:
+    path: /cv
+    controller: App\Controller\DefaultController::cv
+
+projects:
+    path: /projects
+    controller: App\Controller\DefaultController::projects
+
+contact:
+    path: /contact
+    controller: App\Controller\DefaultController::contact
