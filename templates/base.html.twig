@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="{% block lang %}{% endblock %}">
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Welcome!{% endblock %}</title>
     {# Run `composer require symfony/webpack-encore-bundle`
            and uncomment the following Encore helpers to start using Symfony UX #}
     {% block stylesheets %}
-        {# {{ encore_entry_link_tags('app') }} #}
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     {% endblock %}
 
     {% block javascripts %}
@@ -14,7 +14,7 @@
     {% endblock %}
 </head>
 <body>
-<ul>
+<ul id="navbar">
     <li><a href="{{ path('home') }}">{{ 'navbar.home'|trans }}</a></li>
     <li><a href="{{ path('projects') }}">{{ 'navbar.projects'|trans }}</a></li>
     <li><a href="{{ path('cv') }}">{{ 'navbar.cv'|trans }}</a></li>
