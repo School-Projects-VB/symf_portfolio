@@ -4,24 +4,19 @@ namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Contracts\Translation\TranslatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class DefaultController extends AbstractController
 {
     /**
      * @Route("/", name="index")
+     * @Route("/{_locale}/", name="index")
      */
-    public function index(): Response
+    public function index(TranslatorInterface $translator): Response
     {
-        return $this->render('index.html.twig');
-    }
-
-    /**
-     * @Route("/cv", name="cv")
-     */
-    public function cv(): Response
-    {
-        return $this->render('cv.html.twig');
+        $titre = $translator->trans('titre.accueil');
+        return $this->render('index.html.twig', ['title' => $titre]);
     }
 
     /**
@@ -30,6 +25,14 @@ class DefaultController extends AbstractController
     public function projects(): Response
     {
         return $this->render('projects.html.twig');
+    }
+
+    /**
+     * @Route("/cv", name="cv")
+     */
+    public function cv(): Response
+    {
+        return $this->render('cv.html.twig');
     }
 
     /**
