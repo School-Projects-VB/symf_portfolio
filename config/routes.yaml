@@ -2,14 +2,14 @@ home:
     path: /
     controller: App\Controller\DefaultController::index
 
-cv:
-    path: /cv
-    controller: App\Controller\DefaultController::cv
-
 projects:
-    path: /projects
+    path: /{_locale}/projects
     controller: App\Controller\DefaultController::projects
 
+cv:
+    path: /{_locale}/cv
+    controller: App\Controller\DefaultController::cv
+
 contact:
-    path: /contact
+    path: /{_locale}/contact
     controller: App\Controller\DefaultController::contact
