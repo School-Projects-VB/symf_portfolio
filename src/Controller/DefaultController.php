@@ -15,31 +15,41 @@ class DefaultController extends AbstractController
      */
     public function index(TranslatorInterface $translator): Response
     {
-        $titre = $translator->trans('titre.accueil');
-        return $this->render('index.html.twig', ['title' => $titre]);
+        $lang = $translator->trans('lang');
+        $titre = $translator->trans('titre.home');
+        return $this->render('index.html.twig', ['title' => $titre, 'lang' => $lang]);
     }
 
     /**
      * @Route("/projects", name="projects")
+     * @Route("/{_locale}/projects", name="projects")
      */
-    public function projects(): Response
+    public function projects(TranslatorInterface $translator): Response
     {
-        return $this->render('projects.html.twig');
+        $lang = $translator->trans('lang');
+        $titre = $translator->trans('titre.projects');
+        return $this->render('projects.html.twig', ['title' => $titre, 'lang' => $lang]);
     }
 
     /**
      * @Route("/cv", name="cv")
+     * @Route("/{_locale}/cv", name="cv")
      */
-    public function cv(): Response
+    public function cv(TranslatorInterface $translator): Response
     {
-        return $this->render('cv.html.twig');
+        $lang = $translator->trans('lang');
+        $titre = $translator->trans('titre.cv');
+        return $this->render('cv.html.twig', ['title' => $titre, 'lang' => $lang]);
     }
 
     /**
      * @Route("/contact", name="contact")
+     * @Route("/{_locale}/contact", name="contact")
      */
-    public function contact(): Response
+    public function contact(TranslatorInterface $translator): Response
     {
-        return $this->render('contact.html.twig');
+        $lang = $translator->trans('lang');
+        $titre = $translator->trans('titre.contact');
+        return $this->render('contact.html.twig', ['title' => $titre, 'lang' => $lang]);
     }
 }

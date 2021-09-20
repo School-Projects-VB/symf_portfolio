@@ -1,7 +1,9 @@
 {% extends 'base.html.twig' %}
 
+{% block lang %}{{ 'lang'|trans }}{% endblock %}
+
 {% block title %}{{ title }}{% endblock %}
 
 {% block content %}
-    <h1>{{ 'h1.hello'|trans }}</h1>
+    <h1>{{ 'h1.home'|trans }}</h1>
 {% endblock %}

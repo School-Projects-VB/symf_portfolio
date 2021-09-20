@@ -1,5 +1,10 @@
+lang: es
+
 titre:
-  accueil: Initio
+  home: Initio
+  projects: Proyectos
+  cv: CV
+  contact: Contactamos
 
 navbar:
   home: Initio
@@ -8,4 +13,7 @@ navbar:
   contact: Contactamos
 
 h1:
-  hello: Bienvenido a mi sitio web !
+  home: Bienvenido a mi sitio web !
+  projects: Mis Proyectos
+  cv: Mi CV
+  contact: Contactamos
