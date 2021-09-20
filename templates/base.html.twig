@@ -15,10 +15,10 @@
 </head>
 <body>
 <ul>
-    <li><a href="{{ path('home') }}">Accueil</a></li>
-    <li><a href="{{ path('projects') }}">Projects</a></li>
-    <li><a href="{{ path('cv') }}">CV</a></li>
-    <li><a href="{{ path('contact') }}">Contact</a></li>
+    <li><a href="{{ path('home') }}">{{ 'navbar.home'|trans }}</a></li>
+    <li><a href="{{ path('projects') }}">{{ 'navbar.projects'|trans }}</a></li>
+    <li><a href="{{ path('cv') }}">{{ 'navbar.cv'|trans }}</a></li>
+    <li><a href="{{ path('contact') }}">{{ 'navbar.contact'|trans }}</a></li>
 </ul>
 {% block content %}{% endblock %}
 </body>

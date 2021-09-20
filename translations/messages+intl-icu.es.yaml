@@ -1,5 +1,11 @@
 titre:
   accueil: Initio
 
+navbar:
+  home: Initio
+  projects: Proyectos
+  cv: CV
+  contact: Contactamos
+
 h1:
   hello: Bienvenido a mi sitio web !

@@ -1,5 +1,11 @@
 titre:
   accueil: Home
 
+navbar:
+  home: Home
+  projects: Projects
+  cv: CV
+  contact: Contact
+
 h1:
   hello: Welcome to my website !
