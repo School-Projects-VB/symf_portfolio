@@ -52,4 +52,21 @@ class DefaultController extends AbstractController
         $titre = $translator->trans('titre.contact');
         return $this->render('contact.html.twig', ['title' => $titre, 'lang' => $lang]);
     }
+
+    /*
+     * @Route("/form", name="form")
+     * @Route("/{_locale}/form", name="form")
+     */
+    public function form(): Response
+    {
+        return $this->render('Form/new.html.twig');
+    }
+
+    /*
+     *
+     */
+    public function success(): Response
+    {
+        return $this->render('form/success.html.twig');
+    }
 }
