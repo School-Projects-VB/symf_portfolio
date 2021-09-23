@@ -17,7 +17,7 @@ class DefaultController extends AbstractController
     {
         $lang = $translator->trans('lang');
         $titre = $translator->trans('titre.home');
-        return $this->render('index.html.twig', ['title' => $titre, 'lang' => $lang]);
+        return $this->render('views/index.html.twig', ['title' => $titre, 'lang' => $lang]);
     }
 
     /**
@@ -28,7 +28,7 @@ class DefaultController extends AbstractController
     {
         $lang = $translator->trans('lang');
         $titre = $translator->trans('titre.projects');
-        return $this->render('projects.html.twig', ['title' => $titre, 'lang' => $lang]);
+        return $this->render('views/projects.html.twig', ['title' => $titre, 'lang' => $lang]);
     }
 
     /**
@@ -39,34 +39,6 @@ class DefaultController extends AbstractController
     {
         $lang = $translator->trans('lang');
         $titre = $translator->trans('titre.cv');
-        return $this->render('cv.html.twig', ['title' => $titre, 'lang' => $lang]);
-    }
-
-    /**
-     * @Route("/contact", name="contact")
-     * @Route("/{_locale}/contact", name="contact")
-     */
-    public function contact(TranslatorInterface $translator): Response
-    {
-        $lang = $translator->trans('lang');
-        $titre = $translator->trans('titre.contact');
-        return $this->render('contact.html.twig', ['title' => $titre, 'lang' => $lang]);
-    }
-
-    /*
-     * @Route("/form", name="form")
-     * @Route("/{_locale}/form", name="form")
-     */
-    public function form(): Response
-    {
-        return $this->render('Form/new.html.twig');
-    }
-
-    /*
-     *
-     */
-    public function success(): Response
-    {
-        return $this->render('form/success.html.twig');
+        return $this->render('views/cv.html.twig', ['title' => $titre, 'lang' => $lang]);
     }
 }

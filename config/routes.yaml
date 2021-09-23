@@ -9,15 +9,3 @@ projects:
 cv:
     path: /{_locale}/cv
     controller: App\Controller\DefaultController::cv
-
-contact:
-    path: /{_locale}/contact
-    controller: App\Controller\DefaultController::contact
-
-form_new:
-    path: /{_locale}/new
-    controller: App\Controller\DefaultController::form
-
-form_success:
-    path: /{_locale}/success
-    controller: App\Controller\DefaultController::success
