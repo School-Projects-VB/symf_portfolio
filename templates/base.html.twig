@@ -9,16 +9,15 @@
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     {% endblock %}
 
-    {% block javascripts %}
-        {# {{ encore_entry_script_tags('app') }} #}
-    {% endblock %}
+    {% block javascripts %}{% endblock %}
+
 </head>
 <body>
 <ul id="navbar">
     <li><a href="{{ path('home') }}">{{ 'navbar.home'|trans }}</a></li>
     <li><a href="{{ path('projects') }}">{{ 'navbar.projects'|trans }}</a></li>
     <li><a href="{{ path('cv') }}">{{ 'navbar.cv'|trans }}</a></li>
-    <li><a href="{{ path('contact_index') }}">{{ 'navbar.contact'|trans }}</a></li>
+    <li><a href="{{ path('contact') }}">{{ 'navbar.contact'|trans }}</a></li>
 </ul>
 {% block content %}{% endblock %}
 </body>

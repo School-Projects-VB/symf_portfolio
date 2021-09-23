@@ -1,10 +1,17 @@
 lang: fr
 
 titre:
-  home: Accueil
-  projects: Projets
-  cv: CV
-  contact: Contact
+  views:
+    home: Accueil
+    projects: Projets
+    cv: CV
+    contact: Contact
+  contact:
+    home: Contactez-moi
+    new: Nouveau Contact
+    show: Informations
+    edit: Modifier
+    delete: Supprimer
 
 navbar:
   home: Accueil
@@ -16,3 +23,30 @@ h1:
   home: Bienvenue sur mon site !
   projects: Mes Projets
   cv: Mon CV
+  contact:
+    index: Contactez-moi
+    new: Nouveau Contact
+    edit: Modifier le Contact
+    details: Informations
+
+link:
+  contact:
+    show: Montrer
+    edit: Modifier
+    new: Nouveau contact
+    back: Retour
+
+btn:
+  contact:
+    save: Sauvegarder
+    delete: Supprimer
+
+table:
+  contact:
+    id: Identifiant
+    l_name: Nom
+    f_name: Prénom
+    mail: Adresse mail
+    content: Commentaire
+    actions: Actions
+    error: Aucun enregistrement n'a été trouvé

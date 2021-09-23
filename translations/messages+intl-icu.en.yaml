@@ -1,10 +1,17 @@
 lang: en
 
 titre:
-  home: Home
-  projects: Projects
-  cv: CV
-  contact: Contact
+  views:
+    home: Home
+    projects: Projects
+    cv: CV
+    contact: Contact
+  contact:
+    home: Contact-me
+    new: New Contact
+    show: Details
+    edit: Editing
+    delete: Deleting
 
 navbar:
   home: Home
@@ -16,3 +23,30 @@ h1:
   home: Welcome to my website !
   projects: My Projects
   cv: My CV
+  contact:
+    index: Contact-me
+    new: New Contact
+    edit: Edit Profile
+    details: Details
+
+link:
+  contact:
+    show: Show
+    edit: Edit
+    new: New contact
+    back: Back
+
+btn:
+  contact:
+    save: Save
+    delete: Delete
+
+table:
+  contact:
+    id: Id
+    l_name: Last Name
+    f_name: First Name
+    mail: E-mail
+    content: Comment
+    actions: Actions
+    error: No record was found

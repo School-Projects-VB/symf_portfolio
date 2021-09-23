@@ -16,8 +16,11 @@ class DefaultController extends AbstractController
     public function index(TranslatorInterface $translator): Response
     {
         $lang = $translator->trans('lang');
-        $titre = $translator->trans('titre.home');
-        return $this->render('views/index.html.twig', ['title' => $titre, 'lang' => $lang]);
+        $titre = $translator->trans('titre.views.home');
+        return $this->render('views/index.html.twig', [
+            'title' => $titre,
+            'lang' => $lang
+        ]);
     }
 
     /**
@@ -27,8 +30,11 @@ class DefaultController extends AbstractController
     public function projects(TranslatorInterface $translator): Response
     {
         $lang = $translator->trans('lang');
-        $titre = $translator->trans('titre.projects');
-        return $this->render('views/projects.html.twig', ['title' => $titre, 'lang' => $lang]);
+        $titre = $translator->trans('titre.views.projects');
+        return $this->render('views/projects.html.twig', [
+            'title' => $titre,
+            'lang' => $lang
+        ]);
     }
 
     /**
@@ -38,7 +44,10 @@ class DefaultController extends AbstractController
     public function cv(TranslatorInterface $translator): Response
     {
         $lang = $translator->trans('lang');
-        $titre = $translator->trans('titre.cv');
-        return $this->render('views/cv.html.twig', ['title' => $titre, 'lang' => $lang]);
+        $titre = $translator->trans('titre.views.cv');
+        return $this->render('views/cv.html.twig', [
+            'title' => $titre,
+            'lang' => $lang
+        ]);
     }
 }

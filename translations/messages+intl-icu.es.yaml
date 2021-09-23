@@ -1,10 +1,17 @@
 lang: es
 
 titre:
-  home: Initio
-  projects: Proyectos
-  cv: CV
-  contact: Contactamos
+  views:
+    home: Initio
+    projects: Proyectos
+    cv: CV
+    contact: Contactamos
+  contact:
+    home: Contacta Conmigo
+    new: Nuevo Contacto
+    show: Mostrar
+    edit: Editar
+    delete: Borrar
 
 navbar:
   home: Initio
@@ -16,3 +23,30 @@ h1:
   home: Bienvenido a mi sitio web !
   projects: Mis Proyectos
   cv: Mi CV
+  contact:
+    index: Contacta conmigo
+    new: Nuevo Contacto
+    edit: Editar Contacto
+    details: Borrar Contacto
+
+link:
+  contact:
+    show: Mostrar
+    edit: Editar
+    new: Nuevo Contacto
+    back: Volver
+
+btn:
+  contact:
+    save: Registrar
+    delete: Borrar
+
+table:
+  contact:
+    id: Identificador
+    l_name: Appellido
+    f_name: Nombre
+    mail: E-mail
+    content: Comentario
+    actions: Acciones
+    error: No se han encontrado registros
